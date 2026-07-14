@@ -1,4 +1,4 @@
-
+//
 function cargarArchivo(tagSelector, archivo) {
     const elemento = document.querySelector(tagSelector);
     if (!elemento) return;
