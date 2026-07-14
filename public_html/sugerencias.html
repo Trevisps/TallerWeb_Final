@@ -1,0 +1,29 @@
+
+<body>
+    <main>
+        <section class="sugerencia" id="sugerencias">
+            <h2 class="titulo-sugerencia">Sugerencias</h2>
+            <p class="subtitulo">¿Tienes una idea para mejorar nuestro menú o servicio? ¡Cuéntanos!</p>
+            <form class="form-sugerencia" novalidate>
+                <div class="grid-campos">
+                    <div class="campo">
+                        <label class="campo-label" for="sug-nombre">Tu nombre *</label>
+                        <input class="campo-input" id="sug-nombre" type="text" placeholder="Ej. Juan Pérez" required>
+                    </div>
+                    <div class="campo">
+                        <label class="campo-label" for="sug-correo">Tu correo *</label>
+                        <input class="campo-input" id="sug-correo" type="email" placeholder="Ej. juan@correo.com" required>
+                    </div>
+                    <div class="campo campo-ancho">
+                        <label class="campo-label" for="sug-mensaje">Tu sugerencia *</label>
+                        <textarea class="campo-input campo-textarea" id="sug-mensaje" rows="5" placeholder="Escribe tu sugerencia aquí..." required></textarea>
+                    </div>
+                </div>
+                <div class="form-footer">
+                    <button type="submit" class="btn-enviar">Enviar sugerencia</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+

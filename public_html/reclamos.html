@@ -1,0 +1,96 @@
+
+<body>
+    <main>
+        <section class="seccion-blanca" id="reclamos">
+            <div class="reclamos-header">
+                <h2 class="titulo-reclamos">📋 Libro de Reclamaciones</h2>
+                <p class="subtitulo-reclamos">Ley N° 29571 — Derechos del Consumidor</p>
+            </div>
+
+            <form class="form-reclamos" novalidate>
+
+
+                <fieldset class="bloque-reclamos">
+                    <legend class="bloque-reclamos-titulo">Identificación del consumidor reclamante</legend>
+                    <div class="grid-reclamos">
+                        <div class="campo-reclamos">
+                            <label class="campo-reclamos-label" for="rec-nombre">Nombre completo *</label>
+                            <input class="campo-reclamos-input" id="rec-nombre" type="text" placeholder="Ej. Juan Pérez García" required>
+                        </div>
+                        <div class="campo-reclamos">
+                            <label class="campo-reclamos-label" for="rec-domicilio">Domicilio *</label>
+                            <input class="campo-reclamos-input" id="rec-domicilio" type="text" placeholder="Ej. Av. Lima 123, Comas" required>
+                        </div>
+                        <div class="campo-reclamos">
+                            <label class="campo-reclamos-label" for="rec-dni">DNI / CE *</label>
+                            <input class="campo-reclamos-input" id="rec-dni" type="text" placeholder="Ej. 12345678" required>
+                        </div>
+                        <div class="campo-reclamos">
+                            <label class="campo-reclamos-label" for="rec-telefono">Teléfono *</label>
+                            <input class="campo-reclamos-input" id="rec-telefono" type="tel" placeholder="Ej. +51 999 888 777" required>
+                        </div>
+                        <div class="campo-reclamos campo-reclamos-ancho">
+                            <label class="campo-reclamos-label" for="rec-email">Correo electrónico *</label>
+                            <input class="campo-reclamos-input" id="rec-email" type="email" placeholder="Ej. correo@ejemplo.com" required>
+                        </div>
+                    </div>
+                </fieldset>
+
+
+                <fieldset class="bloque-reclamos">
+                    <legend class="bloque-reclamos-titulo">Identificación del bien contratado</legend>
+                    <div class="grid-reclamos">
+                        <div class="campo-reclamos">
+                            <label class="campo-reclamos-label" for="rec-tipo-bien">Tipo de bien *</label>
+                            <select class="campo-reclamos-input select-reclamos" id="rec-tipo-bien" required>
+                                <option value="">Seleccione una opción</option>
+                                <option value="producto">Producto</option>
+                                <option value="servicio">Servicio</option>
+                            </select>
+                        </div>
+                        <div class="campo-reclamos">
+                            <label class="campo-reclamos-label" for="rec-monto">Monto reclamado (S/.) *</label>
+                            <input class="campo-reclamos-input" id="rec-monto" type="text" placeholder="Ej. 35.50" required>
+                        </div>
+                        <div class="campo-reclamos campo-reclamos-ancho">
+                            <label class="campo-reclamos-label" for="rec-desc-bien">Descripción del bien o servicio *</label>
+                            <textarea class="campo-reclamos-input textarea-reclamos" id="rec-desc-bien" rows="3" placeholder="Describa el producto o servicio..." required></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+
+
+                <fieldset class="bloque-reclamos">
+                    <legend class="bloque-reclamos-titulo">Detalle de la reclamación y pedido</legend>
+                    <div class="grid-reclamos">
+                        <div class="campo-reclamos campo-reclamos-ancho">
+                            <label class="campo-reclamos-label" for="rec-tipo-reclamo">Tipo de reclamación *</label>
+                            <select class="campo-reclamos-input select-reclamos" id="rec-tipo-reclamo" required>
+                                <option value="">Seleccione una opción</option>
+                                <option value="reclamo">Reclamo</option>
+                                <option value="queja">Queja</option>
+                            </select>
+                        </div>
+                        <div class="campo-reclamos campo-reclamos-ancho">
+                            <label class="campo-reclamos-label" for="rec-detalle">Detalle de la reclamación *</label>
+                            <textarea class="campo-reclamos-input textarea-reclamos" id="rec-detalle" rows="5" placeholder="Explique detalladamente su reclamo..." required></textarea>
+                        </div>
+                        <div class="campo-reclamos campo-reclamos-ancho">
+                            <label class="campo-reclamos-label" for="rec-pedido">Pedido del consumidor *</label>
+                            <textarea class="campo-reclamos-input textarea-reclamos" id="rec-pedido" rows="4" placeholder="Indique qué solución espera..." required></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="footer-reclamos">
+                    <button type="submit" class="btn-reclamos">Enviar hoja de reclamación</button>
+                </div>
+            </form>
+
+            <p class="aviso-reclamos">
+                Su reclamo será atendido en un plazo no mayor a <strong>15 días hábiles</strong>.
+            </p>
+        </section>
+    </main>
+</body>
+
